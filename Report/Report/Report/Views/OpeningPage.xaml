@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Report.Views.OpeningPage"
+             Title="{Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin Csharp Report Tut"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+
+    <Grid>
+        <ScrollView Grid.Row="1">
+
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <DatePicker x:Name="Date1" />
+                <Entry Placeholder="DonarName" x:Name="Donar1"/>
+                <Entry Placeholder="Amount" Keyboard="Numeric" x:Name="Amount1" />
+
+                <Button Margin="0,10,0,0" Text="Search"  TextColor="White" Clicked="Button_Clicked"
+                        BackgroundColor="BlanchedAlmond"/>
+            </StackLayout>
+
+        </ScrollView>
+    </Grid>
+    
+</ContentPage>

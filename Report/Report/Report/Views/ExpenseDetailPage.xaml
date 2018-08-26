@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Services="clr-namespace:Report.Services"
+             x:Class="Report.Views.ExpenseDetailPage"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <Services:MockExpense/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Update" Clicked="UpdateClicked"/>
+    </ContentPage.ToolbarItems>
+
+
+
+    <ContentPage.Content ItemsSource="{Binding expense}">
+        <StackLayout>
+            <Label Text="ExpenseID:" FontSize="Medium" />
+            <Label Text="{Binding Expense.ExpenseId}" FontSize="Medium"/>
+            <Label Text="Particular:" FontSize="Medium"/>
+            <Entry Text="{Binding Expense.Particular}" FontSize="Medium"/>
+            <Label Text="Amount:" FontSize="Medium"/>
+            <Entry Text="{Binding Expense.Amount}" FontSize="Medium" Keyboard="Numeric"/>
+            <Button Text="Delete" Clicked="DeleteClicked" BackgroundColor="Black" TextColor="YellowGreen"/>
+        </StackLayout>
+    </ContentPage.Content>
+                    
+         
+
+
+    
+</ContentPage>

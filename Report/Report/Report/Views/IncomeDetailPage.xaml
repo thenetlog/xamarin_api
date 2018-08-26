@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Report.Views.IncomeDetailPage"
+             Title="{Binding Title}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Update" Clicked="UpdateClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content ItemsSource="{Binding item}">
+        <StackLayout>
+            <Label Text="IncomeID:" FontSize="Medium" />
+            <Label Text="{Binding Item.IncomeId}" FontSize="Medium"/>
+            <Label Text="Particular:" FontSize="Medium" />
+            <Entry Text="{Binding Item.DonarName}" FontSize="Medium"/>
+            <Label Text="Amount:" FontSize="Medium" />
+            <Entry Text="{Binding Item.Amount}" FontSize="Medium" Keyboard="Numeric"/>
+            <Button Text="Delete" Clicked="DeleteClicked" BackgroundColor="Black" TextColor="YellowGreen"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

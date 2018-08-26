@@ -1,0 +1,15 @@
+C:\Users\John\source\repos\Report\Report\Report\bin\Debug\netstandard2.0\Report.deps.json
+C:\Users\John\source\repos\Report\Report\Report\bin\Debug\netstandard2.0\Report.dll
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.csprojAssemblyReference.cache
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.csproj.CoreCompileInputs.cache
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.App.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.ExpenseDetailPage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.ExpensePage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.IncomeDetailPage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.IncomePage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.MainPage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.NewExpensePage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.NewIncomePage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.Views.OpeningPage.xaml.g.cs
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.AssemblyInfoInputs.cache
+C:\Users\John\source\repos\Report\Report\Report\obj\Debug\netstandard2.0\Report.AssemblyInfo.cs

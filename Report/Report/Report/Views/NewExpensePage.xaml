@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Report.Views.NewExpensePage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clickeds" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+
+            <Label Text="ExpenseId" FontSize="Medium" />
+            <Editor Text="{Binding Expense.ExpenseId }" FontSize="Medium" Margin="0" Keyboard="Numeric"/>
+
+            <Label Text="Particular" FontSize="Medium" />
+            <Editor Text="{Binding Expense.Particular }" FontSize="Medium" Margin="0" />
+
+            <Label Text="Amount" FontSize="Medium" />
+            <Editor Text="{Binding Expense.Amount }" FontSize="Medium" Margin="0" Keyboard="Numeric"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
