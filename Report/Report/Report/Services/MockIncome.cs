@@ -18,7 +18,7 @@ namespace Report.Services
     {
         
         List<Income> items;
-        private JObject att_req_json;
+        //private JObject att_req_json;
         private IHttpClientProvider _HttpClientProvider;
 
         public MockIncome()
@@ -61,18 +61,17 @@ namespace Report.Services
         // For Api
         private const string Url = "https://api.myjson.com/bins/yxkk0";
         private readonly HttpClient _client = new HttpClient();
-        //private ObservableCollection<Income> _items;
         public async Task<IEnumerable<Income>> GetItemsAsync(bool forceRefresh = false)
         {
+            List<Income> items = null;
             string string_response = await _client.GetStringAsync(Url);
-            
-            JObject att_req_json = JObject.Parse(string_response);
-            //List<JToken> item = att_req_json["data"].ToList();
-            //items = JsonConvert.DeserializeObject<List<Income>>(item.ToString());
-            var gbw = att_req_json["data"].ToString();
-            List<Income> items = JsonConvert.DeserializeObject<List<Income>>(gbw);
-            //_items = new ObservableCollection<Income>(items);
-            
+            //string string_response = await _HttpClientProvider.HttpPostMobileApi(null, Url);
+            if (string_response != "false")
+            {
+                JObject att_req_json = JObject.Parse(string_response);
+                var gbw = att_req_json["data"].ToString();
+                items = JsonConvert.DeserializeObject<List<Income>>(gbw);
+            }
             return items;
             //return await Task.FromResult(items);
         }
