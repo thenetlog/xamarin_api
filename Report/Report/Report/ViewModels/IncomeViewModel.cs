@@ -63,16 +63,11 @@ namespace Report.ViewModels
 
             try
             {
-                //List<Income> Items = new List<Income>();
                 Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
-                
                 foreach (Income item in items)
                 {
-                    //Items.Add(new Income());
-                    //Items = new ObservableCollection<Income>(items);
                     Items.Add(item);
-                    
                 }
             }
             catch (Exception ex)
